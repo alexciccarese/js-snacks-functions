@@ -9,8 +9,25 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function sayHello(str) {
+  const hours = new Date().getHours()
+  console.log(hours);
+  
+  if (hours < 13) {
+    console.log('Buongiorno');
+    
+  } else if (hours < 17) {
+    console.log('Buon pomeriggio');
+    
+  } else {
+    console.log('Buonasera');
+    
+  }
+  
 
+}
 
+sayHello()
 // Invoca la funzione qui e stampa il risultato in console
 
 

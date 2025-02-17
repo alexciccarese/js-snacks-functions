@@ -4,9 +4,25 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function firstLetter(arr, letter) {
 
+  const typeLetter = []
 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0].toLowerCase() === letter[0].toLowerCase()) {
+
+      typeLetter.push(arr[i])
+    }
+    
+  }
+  return typeLetter
+
+}
 // Invoca la funzione qui e stampa il risultato in console
+const letterChoise = 'A'
+const letter = firstLetter(names, letterChoise)
+
+console.log(letter);
 
 
 
